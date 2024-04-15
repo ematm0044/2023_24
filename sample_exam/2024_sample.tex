@@ -1,0 +1,91 @@
+\documentclass[a4wide]{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{EMATM0044 Advanced Topics in Machine Learning Test}
+
+This test consists of five questions, each worth ten marks. The final version of this exam will be conducted online. This document is a draft.
+
+\subsection*{Q1}
+\begin{enumerate}
+\item Explain how the Naive Bayes classifier works for text classification. [2 marks]
+\item Discuss three assumptions made by the Naive Bayes classifier. [3 marks]
+\item Given the following table of email messages, each characterized by words: "free" and "money", and classified as spam or not spam:
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+ID & Class & Contains 'Free' & Contains 'Money' \\
+\hline
+1  & Spam  & Yes             & No               \\
+2  & Spam  & Yes             & Yes              \\
+3  & Spam  & No              & Yes              \\
+4  & Not Spam & No           & No               \\
+5  & Not Spam & No           & Yes              \\
+6  & Not Spam & Yes          & No               \\
+7  & Unknown & Yes           & Yes              \\
+\hline
+\end{tabular}
+\end{center}
+Using Naive Bayes, classify the email at the 7th row as spam or not spam. Explain your process and assumptions. [5 marks]
+\end{enumerate}
+
+\subsection*{Q2}
+\begin{enumerate}
+\item Explain what is meant by the terms precision and recall in the context of a classification model. [2 marks]
+\item How does the F1 Score integrate precision and recall, and why might it be a more useful measure than either precision or recall alone? [3 marks]
+\item Given the following confusion matrix for a prediction model on patient diagnoses:
+\begin{center}
+\begin{tabular}{cc|c|c|}
+\cline{3-4}
+& & \multicolumn{2}{ c| }{Predicted} \\ \cline{3-4}
+& & Positive & Negative \\ \cline{1-4}
+\multicolumn{1}{ |c| }{Actual} & Positive & 30 & 5 \\ \cline{2-4}
+\multicolumn{1}{ |c| }{} & Negative & 10 & 55 \\ \cline{1-4}
+\end{tabular}
+\end{center}
+Calculate the precision, recall, and F1 score for the model. Show your work. [3 marks]
+\item Discuss the potential consequences of having low precision or low recall in medical diagnostic tests. [2 marks]
+\end{enumerate}
+
+\subsection*{Q3}
+\begin{enumerate}
+\item What is logistic regression, and when is it appropriate to use it? [2 marks]
+\item Discuss the impact of the logistic function in logistic regression and its importance for modeling probabilities. [2 marks]
+\item Consider the following dataset of exam scores and whether students passed or failed:
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Score & Passed \\
+\hline
+50 & No \\
+55 & No \\
+65 & Yes \\
+70 & Yes \\
+75 & Yes \\
+80 & No \\
+85 & Yes \\
+\hline
+\end{tabular}
+\end{center}
+Using logistic regression, explain how you would approach modeling this data to predict whether a new student with a score of 68 would pass or fail. [3 marks]
+\item How does regularization affect the training of logistic regression models? Provide an example of a regularization method and explain its effect. [3 marks]
+\end{enumerate}
+
+\subsection*{Q4}
+Discuss the ethical implications of AI in automated decision systems, specifically addressing:
+\begin{enumerate}
+\item The importance of AI ethics in the context of automated decision-making systems. [3 marks]
+\item Identify one potential ethical issue related to AI decision-making in the criminal justice system. [4 marks]
+\item Suggest strategies to address the identified ethical issue, focusing on fairness and accountability. [3 marks]
+\end{enumerate}
+
+\subsection*{Q5}
+\begin{enumerate}
+\item Describe the concept of heuristic search in artificial intelligence. [3 marks]
+\item Compare and contrast the greedy best-first search algorithm with the A* search algorithm. [3 marks]
+\item Discuss scenarios where greedy best-first search may lead to suboptimal solutions. [2 marks]
+\item If using greedy best-first search to navigate a robot through an obstacle course, what kind of heuristic might be effective? Assume the robot has to avoid dynamic obstacles. [2 marks]
+\end{enumerate}
+
+\end{document}
